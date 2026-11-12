@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrowIn Authority – LinkedIn Audit for ₹1</title>
+<meta name="description" content="Turn your LinkedIn from invisible to influential. Get a complete LinkedIn audit for just ₹1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f9f9ff; --surface-low:#f0f3ff; --surface:#e7eeff; --surface-high:#dee8ff; --surface-highest:#d8e3fb;
+  --ink:#111c2d; --muted:#414752; --muted-2:#525f75; --primary:#004e99; --li:#0a66c2;
+  --green:#007650; --green-dark:#005b3d; --mint:#6ffbbe; --placeholder:#727783;
+  --shadow-sm:0 1px 1px rgba(0,0,0,.05);
+  --shadow-md:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;padding-top:64px;padding-bottom:96px;line-height:1.4}
+img,svg{max-width:100%}
+a{color:inherit;text-decoration:none}
+p,h1,h2,h3{margin:0}
+.icon{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.icon.fill{fill:currentColor;stroke:none}
+.wrap{max-width:1120px;margin:0 auto;padding-left:20px;padding-right:20px}
+section{scroll-margin-top:72px}
+
+/* ---------- Header ---------- */
+.header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(249,249,255,.8);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);box-shadow:0 1px 8px rgba(0,0,0,.04)}
+.header-inner{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:8px}
+.brand-mark{width:36px;height:36px;border-radius:2px;background:var(--li);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;letter-spacing:-.025em;box-shadow:var(--shadow-sm)}
+.brand-name{font-weight:600;font-size:18px;letter-spacing:-.05em;line-height:22.5px}
+.brand-tag{font-weight:700;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--primary);line-height:1}
+.brand-text{display:flex;flex-direction:column;gap:3px}
+.header-actions{display:flex;align-items:center;gap:8px}
+.top-links{display:none;gap:28px;font-size:14px;font-weight:600;color:var(--muted)}
+.top-links a:hover{color:var(--primary)}
+.btn-header{height:36px;padding:0 16px;background:var(--green);color:#fff;border-radius:2px;font-size:14px;font-weight:600;letter-spacing:.01em;display:inline-flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);white-space:nowrap}
+.avatar-btn{width:32px;height:32px;border-radius:12px;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden;padding:16px 0 40px}
+.glow{position:absolute;border-radius:12px;filter:blur(64px);pointer-events:none}
+.glow-a{width:256px;height:256px;right:-64px;top:-64px;background:rgba(214,227,255,.4)}
+.glow-b{width:224px;height:224px;left:-80px;top:192px;background:rgba(111,251,190,.3)}
+.hero-grid{position:relative;display:flex;flex-direction:column;gap:24px}
+.hero-left,.hero-right{display:contents}
+.badge-pill{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:12px;background:rgba(214,227,254,.6);box-shadow:0 1px 2px rgba(0,0,0,.05);order:1}
+.badge-pill .spark{color:var(--primary);font-size:12px;line-height:12px}
+.badge-pill span.t{font-size:12px;font-weight:700;letter-spacing:.025em;color:#58657b;line-height:16px}
+.headlines{order:2;display:flex;flex-direction:column;gap:8px}
+h1{font-weight:800;font-size:28px;line-height:36px;letter-spacing:-.025em;color:var(--ink)}
+h1 .inv{color:var(--primary);text-decoration:underline wavy rgba(0,78,153,.2);text-decoration-thickness:2px;text-underline-offset:4px}
+h1 .inf{color:var(--li)}
+.lead{font-size:16px;line-height:24px;color:var(--muted)}
+.note{margin-top:4px;background:var(--surface-low);border-radius:4px;padding:12px;display:flex;gap:8px;align-items:flex-start;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.note .icon{color:var(--primary);font-size:16.5px;margin-top:2px}
+.note p{font-size:14px;line-height:20px;letter-spacing:.005em;color:var(--muted-2)}
+.trust{order:3;background:#fff;border-radius:8px;padding:10px 14px;display:flex;gap:10px;align-items:center;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.trust-ic{width:32px;height:32px;border-radius:12px;background:#fef3c7;display:flex;align-items:center;justify-content:center;color:#b45309;font-size:16px;flex-shrink:0}
+.trust b{display:block;font-size:14px;line-height:18px;letter-spacing:.01em}
+.trust span{display:block;font-size:12px;line-height:16px;color:var(--muted)}
+.showcase{order:4;display:flex;gap:8px;padding:4px 0;text-align:center}
+.showcase div{flex:1 1 0;min-width:0;background:var(--surface);border-radius:4px;padding:8px;display:flex;flex-direction:column;align-items:center}
+.showcase b{font-size:18px;line-height:24px;letter-spacing:-.05em}
+.showcase span{font-size:11px;line-height:24px;color:var(--muted)}
+.cta-stack{order:5;display:flex;flex-direction:column;gap:10px;padding-top:4px}
+.btn-primary{background:var(--li);color:#fff;border-radius:2px;padding:0 24px;height:48px;display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:14px;letter-spacing:.025em;box-shadow:var(--shadow-md);transition:filter .15s,transform .15s}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-primary:active{transform:translateY(1px)}
+.btn-primary .right{display:flex;align-items:center;gap:4px}
+.btn-primary .chip{background:rgba(255,255,255,.2);padding:2px 8px;border-radius:2px;font-size:12px;font-weight:600;letter-spacing:.01em;line-height:16px}
+.btn-primary .icon{font-size:13.3px}
+.btn-secondary{background:var(--surface-high);color:var(--primary);height:44px;border-radius:2px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;letter-spacing:.01em;transition:filter .15s}
+.btn-secondary:hover{filter:brightness(.97)}
+.proof{order:6;display:flex;align-items:center;gap:12px;padding-top:8px}
+.avatars{display:flex}
+.avatars i{width:32px;height:32px;border-radius:12px;box-shadow:0 0 0 2px var(--bg),0 1px 2px rgba(0,0,0,.05);margin-right:-8px;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:11px;font-weight:700;color:#fff}
+.avatars i:nth-child(1){background:linear-gradient(135deg,#0a66c2,#6ffbbe)}
+.avatars i:nth-child(2){background:linear-gradient(135deg,#263143,#a8c8ff)}
+.avatars i:nth-child(3){background:linear-gradient(135deg,#007650,#d6e3ff);margin-right:0}
+.avatars{margin-right:8px}
+.stars{display:flex;align-items:center;gap:2px;color:#f59e0b;font-size:11.7px}
+.stars b{color:var(--ink);font-size:12px;padding-left:4px;line-height:16px}
+.proof small{display:block;font-size:11px;line-height:24px;color:var(--muted)}
+
+/* ---------- Achievements ---------- */
+.achieve{background:var(--surface-low);padding:40px 0}
+.achieve .wrap{display:flex;flex-direction:column;gap:24px}
+.eyebrow{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);line-height:16px}
+.eyebrow i{width:8px;height:8px;border-radius:12px;background:var(--primary);display:block}
+h2{font-weight:700;font-size:28px;line-height:36px;letter-spacing:-.025em}
+.sec-head{display:flex;flex-direction:column;gap:4px}
+.sec-head p.sub{font-size:14px;line-height:20px;letter-spacing:.005em;color:var(--muted)}
+.cards{display:grid;grid-template-columns:1fr;gap:12px}
+.card{background:#fff;border-radius:8px;padding:16px;display:flex;gap:14px;align-items:flex-start;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.card .ic{width:40px;height:40px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ic.b{background:#d6e3ff;color:var(--primary)}
+.ic.g{background:var(--mint);color:var(--green-dark)}
+.ic.y{background:#fef3c7;color:#b45309}
+.ic.s{background:#d6e3fe;color:#58657b}
+.card .body{display:flex;flex-direction:column;gap:2px;min-width:0}
+.card .title{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.card h3{font-size:18px;line-height:24px;letter-spacing:-.05em;font-weight:700}
+.tag{font-size:10px;font-weight:700;line-height:24px;padding:2px 8px;border-radius:2px}
+.tag.mint{background:rgba(111,251,190,.6);color:#002113}
+.tag.blue{background:#d6e3ff;color:#001b3d}
+.tag.sky{background:#d6e3fe;color:#0e1c2f}
+.tag.slate{background:#d6e3fe;color:#58657b}
+.card p{font-size:14px;line-height:20px;letter-spacing:.005em;color:var(--muted)}
+.bottom-row{display:grid;grid-template-columns:1fr;gap:24px}
+.stats{background:#263143;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:16px;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+.stats-head{display:flex;justify-content:space-between;align-items:center;color:#a8c8ff;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;line-height:16px}
+.stats-head .icon{font-size:18px}
+.stats-grid{display:flex;gap:8px}
+.stats-grid>div{flex:1 1 0;min-width:0;text-align:center;padding:0 4px;display:flex;flex-direction:column;align-items:center}
+.stats-grid>div+div{border-left:1px solid rgba(255,255,255,.1)}
+.stats-grid b{font-size:22px;line-height:28px;font-weight:800;letter-spacing:-.01em}
+.stats-grid span{font-size:10px;line-height:12.5px;color:#d8e3fb;padding-top:4px}
+.s1{color:#a8c8ff}.s2{color:var(--mint)}.s3{color:#76ffc2}
+.quote{background:var(--surface-highest);border-radius:8px;padding:16px;display:flex;gap:12px;align-items:center;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.quote .icon{font-size:23.8px;color:var(--primary)}
+.quote p{font-size:18px;line-height:24px;font-weight:700;letter-spacing:-.025em}
+
+/* ---------- Offer ---------- */
+.offer{padding:40px 0}
+.offer-grid{display:flex;flex-direction:column;gap:24px}
+.offer-col{display:flex;flex-direction:column;gap:24px}
+.offer-head{display:flex;flex-direction:column;gap:8px}
+.urgent{align-self:flex-start;display:inline-flex;align-items:center;gap:4px;background:#ffdad6;color:#93000a;padding:4px 10px;border-radius:2px;font-size:11px;font-weight:700;line-height:24px}
+.urgent i{width:6px;height:6px;border-radius:12px;background:#ba1a1a;display:block}
+.offer-meta{display:flex;align-items:center;gap:8px;padding-top:4px;flex-wrap:wrap}
+.pill-green{background:var(--green-dark);color:#fff;padding:4px 12px;border-radius:12px;font-size:12px;font-weight:700;letter-spacing:.025em;line-height:16px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.offer-meta span.l{font-size:12px;font-weight:600;color:var(--muted);line-height:16px}
+h2.big{font-weight:800}
+.checklist{background:var(--surface);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:16px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.checklist .hd{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;letter-spacing:.01em;line-height:18px}
+.checklist .hd .icon{color:var(--green);font-size:15px}
+.checklist ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.checklist li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:20px;letter-spacing:.005em}
+.checklist li .tick{width:24px;height:24px;border-radius:12px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:10.4px;flex-shrink:0;margin-top:0}
+.checklist li .icon{stroke-width:3}
+.why{background:var(--surface-high);border-radius:8px;padding:16px;display:flex;gap:12px;align-items:flex-start;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.why .icon{color:var(--primary);font-size:20px;margin-top:2px}
+.why b{display:block;font-size:14px;line-height:18px;letter-spacing:.01em}
+.why p{font-size:14px;line-height:20px;letter-spacing:.005em;color:var(--muted);margin-top:2px}
+.book{background:#fff;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow-md)}
+.book-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.price{display:flex;align-items:center;gap:8px}
+.price .now{font-size:24px;font-weight:800;line-height:32px}
+.price .was{font-size:12px;color:var(--muted);text-decoration:line-through}
+.price .off{background:var(--mint);color:#002113;font-size:11px;font-weight:700;line-height:24px;padding:2px 8px;border-radius:2px}
+.slot{font-size:11px;font-weight:700;color:var(--primary);line-height:24px}
+.btn-green{height:48px;border-radius:2px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:14px;letter-spacing:.01em;box-shadow:var(--shadow-md);transition:filter .15s,transform .15s;text-align:center;padding:0 12px}
+.btn-green:hover{filter:brightness(1.08)}
+.btn-green:active{transform:translateY(1px)}
+.btn-green .icon{font-size:15px}
+.guarantee{display:flex;align-items:center;justify-content:center;gap:8px;padding-top:4px;font-size:12px;line-height:16px;color:var(--muted);text-align:center}
+.guarantee .icon{color:var(--green);font-size:14.7px}
+
+/* ---------- Lead form ---------- */
+.lead-sec{background:var(--surface-low);padding:40px 0}
+.form-card{max-width:560px;margin:0 auto;background:#fff;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:16px;box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+.form-head{display:flex;flex-direction:column;gap:6px}
+.badge-sq{align-self:flex-start;display:inline-flex;align-items:center;gap:4px;background:#d6e3fe;color:#58657b;padding:4px 10px;border-radius:2px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;line-height:24px}
+.badge-sq .icon{font-size:10.5px}
+h3.form-title{font-weight:800;font-size:22px;line-height:28px;letter-spacing:-.025em}
+.form-head p.sub{font-size:14px;line-height:20px;letter-spacing:.005em;color:var(--muted)}
+form{display:flex;flex-direction:column;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;letter-spacing:.01em;line-height:18px}
+.field label .icon{font-size:11px;color:var(--primary)}
+.field input{width:100%;height:44px;border:1px solid transparent;border-radius:2px;background:var(--surface);padding:0 14px;font:400 14px 'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:.005em;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.05);outline:none;transition:border-color .15s,box-shadow .15s,background .15s}
+.field input::placeholder{color:var(--placeholder)}
+.field input:focus{background:#fff;border-color:var(--li);box-shadow:0 0 0 3px rgba(10,102,194,.15)}
+.field input.invalid{border-color:#ba1a1a;background:#fff5f4}
+.submit-wrap{padding-top:8px}
+.btn-submit{width:100%;height:48px;border:0;border-radius:2px;cursor:pointer;background:linear-gradient(90deg,var(--primary),var(--li));color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font:700 14px 'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:.025em;box-shadow:0 10px 15px -3px rgba(0,78,153,.2),0 4px 6px -4px rgba(0,78,153,.2);transition:filter .15s,transform .15s}
+.btn-submit:hover{filter:brightness(1.08)}
+.btn-submit:active{transform:translateY(1px)}
+.btn-submit:disabled{opacity:.7;cursor:not-allowed}
+.btn-submit .icon{font-size:14px}
+.form-status{display:none;border-radius:4px;padding:12px 14px;font-size:14px;line-height:20px}
+.form-status.show{display:block}
+.form-status.ok{background:#d9f9ea;color:#00391f}
+.form-status.err{background:#ffdad6;color:#93000a}
+.trust-line{display:flex;align-items:center;justify-content:center;gap:6px;padding-top:4px;font-size:12px;line-height:16px;color:var(--muted)}
+.trust-line .icon{font-size:11px}
+
+/* ---------- Pill + footer ---------- */
+.live-pill-wrap{display:flex;justify-content:center;padding:8px 20px 48px}
+.live-pill{display:inline-flex;align-items:center;gap:8px;background:var(--surface-highest);padding:8px 16px;border-radius:12px;font-size:12px;font-weight:600;line-height:16px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05));text-align:center}
+.live-pill i{width:8px;height:8px;border-radius:12px;background:var(--green-dark);display:block;flex-shrink:0}
+
+/* ---------- Bottom nav ---------- */
+.bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.85);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);box-shadow:0 -1px 10px rgba(0,0,0,.05)}
+.bottom-nav-inner{height:64px;max-width:520px;margin:0 auto;display:flex;align-items:center;justify-content:space-around;padding:0 4px}
+.bottom-nav a{min-width:56px;min-height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.04em;line-height:16px}
+.bottom-nav a .icon{font-size:19px}
+.bottom-nav a.active{color:var(--primary)}
+
+/* ---------- Tablet / desktop ---------- */
+@media (min-width:700px){
+  .wrap{padding-left:32px;padding-right:32px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .bottom-row{grid-template-columns:1fr 1fr}
+  .hero{padding-top:32px}
+  h1{font-size:40px;line-height:48px}
+  h2{font-size:32px;line-height:40px}
+}
+@media (min-width:900px){
+  body{padding-bottom:0}
+  .bottom-nav{display:none}
+  .top-links{display:flex}
+  .header-actions{gap:20px}
+  .hero{padding:56px 0 64px}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .hero-left,.hero-right{display:flex;flex-direction:column;gap:24px}
+  .hero-left>*,.hero-right>*{order:0}
+  h1{font-size:48px;line-height:56px;letter-spacing:-.03em}
+  .lead{font-size:18px;line-height:28px}
+  .cta-stack{flex-direction:row;align-items:stretch}
+  .cta-stack>a{flex:1}
+  .btn-secondary{height:48px}
+  .achieve,.offer,.lead-sec{padding:72px 0}
+  .achieve .wrap{gap:36px}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .offer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+  h2.big{font-size:40px;line-height:48px}
+}
+@media (max-width:360px){
+  h1{font-size:26px;line-height:34px}
+  .stats-grid b{font-size:19px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-funnel" viewBox="0 0 24 24"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.76-2.02-2-2H4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .01-1 1.03V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.76-2.02-2-2h-4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+  <symbol id="i-calcheck" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+</svg>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#overview" class="brand" aria-label="GrowIn Authority home">
+      <span class="brand-mark">G</span>
+      <span class="brand-text">
+        <span class="brand-name">GrowIn</span>
+        <span class="brand-tag">Authority</span>
+      </span>
+    </a>
+    <div class="header-actions">
+      <nav class="top-links" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#results">Results</a>
+        <a href="#system">System</a>
+        <a href="#lead-form">Proof</a>
+      </nav>
+      <a class="btn-header" href="https://payments.cashfree.com/forms/getaudit" target="_blank" rel="noopener">Audit for ₹1</a>
+      <span class="avatar-btn" aria-hidden="true"><svg class="icon"><use href="#i-user"/></svg></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero" id="overview">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="badge-pill"><span class="spark">✦</span><span class="t">Strategy • Scripting • Full Management</span></div>
+
+          <div class="headlines">
+            <h1>Turn Your LinkedIn From <span style="white-space:nowrap"><span class="inv">Invisible</span> to <span class="inf">Influential</span></span></h1>
+            <p class="lead">We don't just "optimize profiles." We build your personal brand from scratch — with strategy, content, and consistency that actually gets you seen.</p>
+            <div class="note">
+              <svg class="icon"><use href="#i-rocket"/></svg>
+              <p>From 0 to hero on LinkedIn — without confusion, guesswork, or wasting months figuring it out alone.</p>
+            </div>
+          </div>
+
+          <div class="cta-stack">
+            <a class="btn-primary" href="https://payments.cashfree.com/forms/getaudit" target="_blank" rel="noopener">
+              <span>Get Your Profile Audit</span>
+              <span class="right"><span class="chip">₹1 Deal</span><svg class="icon"><use href="#i-arrow"/></svg></span>
+            </a>
+            <a class="btn-secondary" href="#lead-form">Start Growing Today</a>
+          </div>
+
+          <div class="proof">
+            <div class="avatars" aria-hidden="true"><i>R</i><i>A</i><i>S</i></div>
+            <div>
+              <div class="stars" aria-label="4.9 out of 5">
+                <svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg>
+                <b>4.9/5</b>
+              </div>
+              <small>Trusted by top founders and operators</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="trust">
+            <span class="trust-ic"><svg class="icon"><use href="#i-award"/></svg></span>
+            <div>
+              <b>100+ Brands Built • 4.8M+ Organic Impressions</b>
+              <span>Validated across Tech, SaaS, VC &amp; Consulting founders</span>
+            </div>
+          </div>
+          <div class="showcase">
+            <div><b style="color:var(--primary)">100+</b><span>Execs Scaled</span></div>
+            <div><b style="color:var(--green-dark)">4.8M+</b><span>Views Created</span></div>
+            <div><b style="color:var(--li)">100%</b><span>Organic Inbound</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="achieve" id="results">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow"><i></i>PROVEN TRACK RECORD</div>
+        <h2>Real Growth. Real Results.</h2>
+        <p class="sub">We don't do vanity engagement pods. We architect tangible commercial equity on LinkedIn.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="ic b"><svg class="icon"><use href="#i-users"/></svg></div>
+          <div class="body">
+            <div class="title"><h3>100+ Authority Leaders</h3><span class="tag mint">VERIFIED</span></div>
+            <p>Helped 100+ professionals build authority on LinkedIn</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ic g"><svg class="icon"><use href="#i-funnel"/></svg></div>
+          <div class="body">
+            <div class="title"><h3>Predictable Inbound Pipeline</h3><span class="tag sky">SALES</span></div>
+            <p>Generated consistent inbound leads through content</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ic b"><svg class="icon"><use href="#i-flag"/></svg></div>
+          <div class="body">
+            <div class="title"><h3>Zero to Category Hero</h3><span class="tag blue">SCALE</span></div>
+            <p>Built personal brands from absolute zero</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ic y"><svg class="icon"><use href="#i-zap"/></svg></div>
+          <div class="body">
+            <div class="title"><h3>10x Organic Reach</h3><span class="tag mint">VIRAL</span></div>
+            <p>Content that reaches thousands organically</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ic s"><svg class="icon"><use href="#i-target"/></svg></div>
+          <div class="body">
+            <div class="title"><h3>High-Converting Profile Funnel</h3><span class="tag slate">LEADS</span></div>
+            <p>Profiles that convert views into opportunities</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="bottom-row">
+        <div class="stats">
+          <div class="stats-head"><span>GROWTH MULTIPLIERS</span><svg class="icon"><use href="#i-trend"/></svg></div>
+          <div class="stats-grid">
+            <div><b class="s1">100+</b><span>Professionals Scaled</span></div>
+            <div><b class="s2">0 to 10k+</b><span>Followers Built</span></div>
+            <div><b class="s3">100%</b><span>Inbound System</span></div>
+          </div>
+        </div>
+        <div class="quote">
+          <svg class="icon"><use href="#i-quote"/></svg>
+          <p>"This isn't luck. It's a system that works."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special audit offer -->
+  <section class="offer" id="system">
+    <div class="wrap">
+      <div class="offer-grid">
+        <div class="offer-col">
+          <div class="offer-head">
+            <span class="urgent"><i></i>SPECIAL INTRODUCTORY OFFER • LIMITED SLOTS</span>
+            <div class="offer-meta"><span class="pill-green">₹1 Special Session</span><span class="l">9 spots left this week</span></div>
+            <h2 class="big">Get a Complete LinkedIn Audit for Just Rupee 1</h2>
+            <p class="lead">Not a sales call. A real breakdown of what's working, what's not, and what to fix.</p>
+          </div>
+
+          <div class="checklist">
+            <div class="hd"><svg class="icon"><use href="#i-check"/></svg>What You'll Get in 30 Minutes:</div>
+            <ul>
+              <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span>Profile review (headline, banner, positioning)</li>
+              <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span>Content gap analysis</li>
+              <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span>Personal brand direction</li>
+              <li><span class="tick"><svg class="icon"><use href="#i-check"/></svg></span>Clear action steps to improve visibility</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="offer-col">
+          <div class="why">
+            <svg class="icon"><use href="#i-bulb"/></svg>
+            <div><b>Why Rupee 1?</b><p>Because once you see the value, you'll know what to do next.</p></div>
+          </div>
+
+          <div class="book">
+            <div class="book-top">
+              <div class="price"><span class="now">₹1</span><span class="was">₹4,999</span><span class="off">99.9% OFF</span></div>
+              <span class="slot">Instant Calendar Slot</span>
+            </div>
+            <a class="btn-green" href="https://payments.cashfree.com/forms/getaudit" target="_blank" rel="noopener">
+              <svg class="icon"><use href="#i-calcheck"/></svg>Book My Audit Now (₹1 Only)
+            </a>
+            <div class="guarantee"><svg class="icon"><use href="#i-shield"/></svg><span>Instant slot booking • 30-min 1-on-1 teardown</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead form -->
+  <section class="lead-sec" id="lead-form">
+    <div class="wrap">
+      <div class="form-card">
+        <div class="form-head">
+          <span class="badge-sq"><svg class="icon fill"><use href="#i-star"/></svg>PERSONALIZED GROWTH BLUEPRINT</span>
+          <h3 class="form-title">Let's Build Your LinkedIn Presence Together</h3>
+          <p class="sub">Tell us a bit about you — and we'll show you exactly how to grow.</p>
+        </div>
+
+        <form id="leadForm" novalidate>
+          <div class="field">
+            <label for="name"><svg class="icon"><use href="#i-user"/></svg>Full Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email"><svg class="icon"><use href="#i-mail"/></svg>Work Email</label>
+            <input type="email" id="email" name="email" placeholder="rahul@company.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone"><svg class="icon"><use href="#i-phone"/></svg>Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" inputmode="tel" required>
+          </div>
+
+          <div class="submit-wrap">
+            <button type="submit" class="btn-submit" id="submitBtn"><span id="submitLabel">Get My Growth Plan</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          <div class="trust-line"><svg class="icon"><use href="#i-lock"/></svg>No spam. No fluff. Just actionable clarity.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="live-pill-wrap">
+    <div class="live-pill"><i></i>Over 1,240 profile reviews completed in 2024</div>
+  </div>
+</main>
+
+<!-- Bottom nav (mobile) -->
+<nav class="bottom-nav" aria-label="Sections">
+  <div class="bottom-nav-inner">
+    <a href="#overview" class="active"><svg class="icon"><use href="#i-home"/></svg>Overview</a>
+    <a href="#results"><svg class="icon"><use href="#i-chart"/></svg>Results</a>
+    <a href="#system"><svg class="icon"><use href="#i-layers"/></svg>System</a>
+    <a href="#lead-form"><svg class="icon"><use href="#i-award"/></svg>Proof</a>
+  </div>
+</nav>
+
+<script>
+(function () {
+  // ===== Google Apps Script Web App URL =====
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzzD6vuMIUi8aBBTIBjd2pBcI0xTW5TIcvy13vXiZXNAlL-07uinrTN-HQRV-MVIrMs/exec";
+
+  var form = document.getElementById("leadForm");
+  var btn = document.getElementById("submitBtn");
+  var label = document.getElementById("submitLabel");
+  var statusBox = document.getElementById("formStatus");
+  var fields = {
+    name: document.getElementById("name"),
+    email: document.getElementById("email"),
+    phone: document.getElementById("phone")
+  };
+  var DEFAULT_LABEL = label.textContent;
+
+  function setStatus(type, msg) {
+    statusBox.className = "form-status show " + type;
+    statusBox.textContent = msg;
+  }
+
+  function showSuccess() {
+    setStatus("ok", "Thank you! We've received your details and will reach out shortly with your growth plan.");
+    form.reset();
+    btn.disabled = false;
+    label.textContent = DEFAULT_LABEL;
+  }
+
+  function showError() {
+    setStatus("err", "Something went wrong. Please check your connection and try again.");
+    btn.disabled = false;
+    label.textContent = DEFAULT_LABEL;
+  }
+
+  function validate(values) {
+    var ok = true;
+    var digits = values.phone.replace(/\D/g, "");
+    var checks = {
+      name: values.name.length >= 2,
+      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email),
+      phone: digits.length >= 10 && digits.length <= 15
+    };
+    Object.keys(checks).forEach(function (k) {
+      fields[k].classList.toggle("invalid", !checks[k]);
+      if (!checks[k]) ok = false;
+    });
+    return ok;
+  }
+
+  Object.keys(fields).forEach(function (k) {
+    fields[k].addEventListener("input", function () { fields[k].classList.remove("invalid"); });
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    var name = fields.name.value.trim();
+    var email = fields.email.value.trim();
+    var phone = fields.phone.value.trim();
+
+    if (!validate({ name: name, email: email, phone: phone })) {
+      setStatus("err", "Please enter a valid name, email and phone number.");
+      return;
+    }
+
+    btn.disabled = true;
+    label.textContent = "Sending...";
+    statusBox.className = "form-status";
+
+    var url = SCRIPT_URL + "?" + new URLSearchParams({ name: name, email: email, phone: phone });
+
+    fetch(url, { method: "GET", mode: "no-cors" })
+      .then(function () { showSuccess(); })
+      .catch(function () { showError(); });
+  });
+
+  // Highlight active section in bottom nav
+  var links = document.querySelectorAll(".bottom-nav a");
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting && map[en.target.id]) {
+          links.forEach(function (l) { l.classList.remove("active"); });
+          map[en.target.id].classList.add("active");
+        }
+      });
+    }, { rootMargin: "-40% 0px -50% 0px" });
+    Object.keys(map).forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+  }
+})();
+</script>
+</body>
+</html>
